@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4859482409149930014}
   - component: {fileID: 6777456704572884524}
   - component: {fileID: 657545887}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,6 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0
 --- !u!1 &817378228596062130
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,7 +151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 817378228596062130}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.13999987, z: 0.09}
+  m_LocalPosition: {x: 0, y: -0.13999987, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3386955442061104124}
@@ -233,7 +234,7 @@ GameObject:
   - component: {fileID: 386681334814367203}
   - component: {fileID: 7686098858433896983}
   - component: {fileID: 657545874}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -345,6 +346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0
 --- !u!1 &1117846378747981510
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,7 +359,7 @@ GameObject:
   - component: {fileID: 4501260681457349995}
   - component: {fileID: 3834488143186591822}
   - component: {fileID: 657545884}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -469,6 +471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0
 --- !u!1 &1174865768335486160
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,7 +484,7 @@ GameObject:
   - component: {fileID: 6655603586336670405}
   - component: {fileID: 3245025853685794366}
   - component: {fileID: 657545872}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -593,6 +596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0
 --- !u!1 &1341491497200121105
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,7 +609,7 @@ GameObject:
   - component: {fileID: 4860576568402845856}
   - component: {fileID: 5106555137391557743}
   - component: {fileID: 657545865}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -717,6 +721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0
 --- !u!1 &1466650046480183977
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,7 +734,7 @@ GameObject:
   - component: {fileID: 6758258880433376783}
   - component: {fileID: 7328323209937368726}
   - component: {fileID: 657545878}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -841,6 +846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0
 --- !u!1 &1702981801817103174
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,7 +859,7 @@ GameObject:
   - component: {fileID: 3037296621007753798}
   - component: {fileID: 7477855303829444970}
   - component: {fileID: 657545867}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -965,6 +971,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0
 --- !u!1 &2362921114132011514
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,7 +984,7 @@ GameObject:
   - component: {fileID: 5456475211133853647}
   - component: {fileID: 3850570331522441861}
   - component: {fileID: 657545868}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1089,6 +1096,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0
 --- !u!1 &2592418731118426565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1101,7 +1109,7 @@ GameObject:
   - component: {fileID: 4401833628506459626}
   - component: {fileID: 3492625197049379675}
   - component: {fileID: 657545870}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1213,6 +1221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0
 --- !u!1 &2604904250886832236
 GameObject:
   m_ObjectHideFlags: 0
@@ -1225,7 +1234,7 @@ GameObject:
   - component: {fileID: 7286179926748109413}
   - component: {fileID: 4217805876627942860}
   - component: {fileID: 657545880}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1337,6 +1346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0
 --- !u!1 &2995564269169715519
 GameObject:
   m_ObjectHideFlags: 0
@@ -1349,7 +1359,7 @@ GameObject:
   - component: {fileID: 2532170682944170459}
   - component: {fileID: 3554499861767860115}
   - component: {fileID: 657545875}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1461,6 +1471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0
 --- !u!1 &3260484650382961400
 GameObject:
   m_ObjectHideFlags: 0
@@ -1473,7 +1484,7 @@ GameObject:
   - component: {fileID: 261742311086913752}
   - component: {fileID: 398630102427735126}
   - component: {fileID: 657545876}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1585,6 +1596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0
 --- !u!1 &3712554206621306947
 GameObject:
   m_ObjectHideFlags: 0
@@ -1597,7 +1609,7 @@ GameObject:
   - component: {fileID: 3892591287401399341}
   - component: {fileID: 577030261108425752}
   - component: {fileID: 657545879}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1709,6 +1721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0
 --- !u!1 &4071910152063731732
 GameObject:
   m_ObjectHideFlags: 0
@@ -1721,7 +1734,7 @@ GameObject:
   - component: {fileID: 4217028764972403325}
   - component: {fileID: 5846457749028159286}
   - component: {fileID: 657545885}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1833,6 +1846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0
 --- !u!1 &4349415523045534183
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,7 +1859,7 @@ GameObject:
   - component: {fileID: 809583140269525698}
   - component: {fileID: 4677432499811651329}
   - component: {fileID: 657545866}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1957,6 +1971,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0
 --- !u!1 &4826030893627532681
 GameObject:
   m_ObjectHideFlags: 0
@@ -1969,7 +1984,7 @@ GameObject:
   - component: {fileID: 4436093765241804624}
   - component: {fileID: 5162459082363012550}
   - component: {fileID: 657545877}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2081,6 +2096,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0
 --- !u!1 &5440406188985864300
 GameObject:
   m_ObjectHideFlags: 0
@@ -2093,7 +2109,7 @@ GameObject:
   - component: {fileID: 9156216089037373499}
   - component: {fileID: 3314224290530153728}
   - component: {fileID: 657545869}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2205,6 +2221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0
 --- !u!1 &5738821848848414518
 GameObject:
   m_ObjectHideFlags: 0
@@ -2217,7 +2234,7 @@ GameObject:
   - component: {fileID: 7397935595463332190}
   - component: {fileID: 8416948685619666561}
   - component: {fileID: 657545873}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2329,6 +2346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0
 --- !u!1 &5910861147813150278
 GameObject:
   m_ObjectHideFlags: 0
@@ -2341,7 +2359,7 @@ GameObject:
   - component: {fileID: 7716578609825609014}
   - component: {fileID: 4244539980731714619}
   - component: {fileID: 657545881}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2453,6 +2471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0
 --- !u!1 &6494319440627637888
 GameObject:
   m_ObjectHideFlags: 0
@@ -2465,7 +2484,7 @@ GameObject:
   - component: {fileID: 3472937175551845229}
   - component: {fileID: 8172128290203822375}
   - component: {fileID: 657545863}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2577,6 +2596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0
 --- !u!1 &6845845640197726016
 GameObject:
   m_ObjectHideFlags: 0
@@ -2589,7 +2609,7 @@ GameObject:
   - component: {fileID: 2127397709399296606}
   - component: {fileID: 5082556967327965645}
   - component: {fileID: 657545882}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2701,6 +2721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0
 --- !u!1 &6938869394813294864
 GameObject:
   m_ObjectHideFlags: 0
@@ -2713,7 +2734,7 @@ GameObject:
   - component: {fileID: 1644908651467644391}
   - component: {fileID: 6909913457876259054}
   - component: {fileID: 657545886}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2825,6 +2846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0
 --- !u!1 &7989677900800170032
 GameObject:
   m_ObjectHideFlags: 0
@@ -2837,7 +2859,7 @@ GameObject:
   - component: {fileID: 5522085067880286368}
   - component: {fileID: 2536862618584765677}
   - component: {fileID: 657545871}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2949,6 +2971,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0
 --- !u!1 &8114412701062710009
 GameObject:
   m_ObjectHideFlags: 0
@@ -3018,7 +3041,7 @@ GameObject:
   - component: {fileID: 2701559793091680348}
   - component: {fileID: 8245588122109633534}
   - component: {fileID: 657545864}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3130,6 +3153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0
 --- !u!1 &8986953562088563930
 GameObject:
   m_ObjectHideFlags: 0
@@ -3156,7 +3180,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8986953562088563930}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.13999987, z: 0.1}
+  m_LocalPosition: {x: 0, y: -0.13999987, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3386955442061104124}
@@ -3239,7 +3263,7 @@ GameObject:
   - component: {fileID: 5884681731508142259}
   - component: {fileID: 3540661494692225859}
   - component: {fileID: 657545883}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BeyazTabla (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3351,3 +3375,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  filled: 0

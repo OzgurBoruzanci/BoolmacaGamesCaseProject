@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TableCellManager : LightModeControl
 {
-    
+    [HideInInspector] public bool filled;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
