@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class LightModeControl : MonoBehaviour
 {
+   
     protected bool _whiteLight;
     public Sprite blackSprite;
     public Sprite whiteSprite;
@@ -40,4 +41,5 @@ public class LightModeControl : MonoBehaviour
             transform.GetComponent<SpriteRenderer>().sprite = blackSprite;
         }
     }
+    
 }

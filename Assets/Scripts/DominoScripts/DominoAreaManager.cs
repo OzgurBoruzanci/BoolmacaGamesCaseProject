@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class DominoAreaManager : DominaAreaLightControl
@@ -33,6 +34,7 @@ public class DominoAreaManager : DominaAreaLightControl
     }
     void SettledDownDomino()
     {
-        Instantiate(domino,transform.position,Quaternion.identity);
+        Vector3 newDominoPos = new Vector3(transform.position.x, transform.position.y, -1);
+        Instantiate(domino, newDominoPos, transform.rotation);
     }
 }

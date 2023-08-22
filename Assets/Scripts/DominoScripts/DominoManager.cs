@@ -9,15 +9,23 @@ using static UnityEngine.UI.Image;
 public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
 {
     //[HideInInspector] public bool settledDown;
+    [SerializeField] LayerMask dominoAreaMask;
+    [SerializeField] LayerMask targetMask;
+    [SerializeField] LayerMask setleDomino;
+    float rotationZ = 0;
     Vector3 _ofset;
+    Vector3 _firstPos;
 
-    private void Start()
+
+    void Start()
     {
-        
+        _firstPos = transform.position;
     }
 
+   
     public void OnDrag(PointerEventData eventData)
     {
+        transform.localScale = new Vector3(0.78f, 0.78f, 0.78f);
         Vector3 _target = Camera.main.ScreenToWorldPoint(eventData.position);
         _target += _ofset;
         _target.z = 0;
@@ -26,14 +34,62 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        transform.localScale = new Vector3(0.77f, 0.77f, 0.77f);
+        //transform.Rotate(new Vector3(transform.rotation.x, transform.rotation.y, rotationZ + 90));
+        //EventManager.MouseClick();
         Vector3 _target = Camera.main.ScreenToWorldPoint(eventData.position);
         _ofset = transform.position - _target;
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        
+        RotateOnClick();
+        ColliderHitController();
     }
-   
+
+    Collider2D ColliderHit(LayerMask layerMask)
+    {
+        var origin = transform.position;
+        Collider2D col = Physics2D.OverlapPoint(transform.position, layerMask, 0, 10);
+        return col;
+    }
+
+    void RotateOnClick()
+    {
+        Collider2D col = ColliderHit(dominoAreaMask);
+        if (col != null)
+        {
+            transform.Rotate(new Vector3(transform.rotation.x, transform.rotation.y, rotationZ + 90));
+            EventManager.MouseClick();
+        }
+
+    }
+
+    void ColliderHitController()
+    {
+        Collider2D col = ColliderHit(targetMask);
+        if (col != null)
+        {
+            float _x = 0;
+            float _y = 0;
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                _x += transform.GetChild(i).GetComponent<MakeARayCastHit>().HitPos().x;
+                _y += transform.GetChild(i).GetComponent<MakeARayCastHit>().HitPos().y;
+                transform.GetChild(i).GetComponent<MakeARayCastHit>().ColliderHit().transform.GetComponent<Collider2D>().enabled = false;
+            }
+            transform.position = new Vector3(_x / 2, _y / 2, 0);
+            _x = 0;
+            _y = 0;
+            EventManager.SettledDownDomino();
+        }
+        else
+        {
+            BackFirstPos();
+        }
+    }
+    void BackFirstPos()
+    {
+        transform.position = _firstPos;
+        transform.localScale = Vector3.one;
+    }
 }

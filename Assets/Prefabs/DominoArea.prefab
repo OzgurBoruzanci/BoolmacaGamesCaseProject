@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 232213660579400774}
   - component: {fileID: 265858354}
   - component: {fileID: 5783322890710943453}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DominoArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 1eb56612fca6ff640a8e6fb7149e03b9, type: 3}
   whiteSprite: {fileID: 21300000, guid: 5b8899f18c17af64bbed15658dc9ae44, type: 3}
-  domino: {fileID: 0}
+  domino: {fileID: 4772848793372113672, guid: 91a8d532ca6a12f4a861f8a5bc2fe94a, type: 3}
 --- !u!61 &5783322890710943453
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -441,8 +441,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7773122464846326078}
-  m_LocalRotation: {x: 0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0.03}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3440763559216491119}
@@ -451,7 +451,7 @@ Transform:
   - {fileID: 2007733186535579442}
   m_Father: {fileID: 1125141658394671916}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &265858359
 MonoBehaviour:
   m_ObjectHideFlags: 0

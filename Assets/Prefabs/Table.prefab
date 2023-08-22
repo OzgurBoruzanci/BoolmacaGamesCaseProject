@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4859482409149930014}
   - component: {fileID: 6777456704572884524}
   - component: {fileID: 657545887}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -234,7 +234,7 @@ GameObject:
   - component: {fileID: 386681334814367203}
   - component: {fileID: 7686098858433896983}
   - component: {fileID: 657545874}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -316,7 +316,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -359,7 +359,7 @@ GameObject:
   - component: {fileID: 4501260681457349995}
   - component: {fileID: 3834488143186591822}
   - component: {fileID: 657545884}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -441,7 +441,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -484,7 +484,7 @@ GameObject:
   - component: {fileID: 6655603586336670405}
   - component: {fileID: 3245025853685794366}
   - component: {fileID: 657545872}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -566,7 +566,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -609,7 +609,7 @@ GameObject:
   - component: {fileID: 4860576568402845856}
   - component: {fileID: 5106555137391557743}
   - component: {fileID: 657545865}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -691,7 +691,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -734,7 +734,7 @@ GameObject:
   - component: {fileID: 6758258880433376783}
   - component: {fileID: 7328323209937368726}
   - component: {fileID: 657545878}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -816,7 +816,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -859,7 +859,7 @@ GameObject:
   - component: {fileID: 3037296621007753798}
   - component: {fileID: 7477855303829444970}
   - component: {fileID: 657545867}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -941,7 +941,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -984,7 +984,7 @@ GameObject:
   - component: {fileID: 5456475211133853647}
   - component: {fileID: 3850570331522441861}
   - component: {fileID: 657545868}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1066,7 +1066,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1109,7 +1109,7 @@ GameObject:
   - component: {fileID: 4401833628506459626}
   - component: {fileID: 3492625197049379675}
   - component: {fileID: 657545870}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1191,7 +1191,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1234,7 +1234,7 @@ GameObject:
   - component: {fileID: 7286179926748109413}
   - component: {fileID: 4217805876627942860}
   - component: {fileID: 657545880}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1316,7 +1316,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1359,7 +1359,7 @@ GameObject:
   - component: {fileID: 2532170682944170459}
   - component: {fileID: 3554499861767860115}
   - component: {fileID: 657545875}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1441,7 +1441,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1484,7 +1484,7 @@ GameObject:
   - component: {fileID: 261742311086913752}
   - component: {fileID: 398630102427735126}
   - component: {fileID: 657545876}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1566,7 +1566,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1609,7 +1609,7 @@ GameObject:
   - component: {fileID: 3892591287401399341}
   - component: {fileID: 577030261108425752}
   - component: {fileID: 657545879}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1691,7 +1691,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1734,7 +1734,7 @@ GameObject:
   - component: {fileID: 4217028764972403325}
   - component: {fileID: 5846457749028159286}
   - component: {fileID: 657545885}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1816,7 +1816,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1859,7 +1859,7 @@ GameObject:
   - component: {fileID: 809583140269525698}
   - component: {fileID: 4677432499811651329}
   - component: {fileID: 657545866}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1941,7 +1941,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1984,7 +1984,7 @@ GameObject:
   - component: {fileID: 4436093765241804624}
   - component: {fileID: 5162459082363012550}
   - component: {fileID: 657545877}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2066,7 +2066,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2109,7 +2109,7 @@ GameObject:
   - component: {fileID: 9156216089037373499}
   - component: {fileID: 3314224290530153728}
   - component: {fileID: 657545869}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2191,7 +2191,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2234,7 +2234,7 @@ GameObject:
   - component: {fileID: 7397935595463332190}
   - component: {fileID: 8416948685619666561}
   - component: {fileID: 657545873}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2316,7 +2316,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2359,7 +2359,7 @@ GameObject:
   - component: {fileID: 7716578609825609014}
   - component: {fileID: 4244539980731714619}
   - component: {fileID: 657545881}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2441,7 +2441,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2484,7 +2484,7 @@ GameObject:
   - component: {fileID: 3472937175551845229}
   - component: {fileID: 8172128290203822375}
   - component: {fileID: 657545863}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2566,7 +2566,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2609,7 +2609,7 @@ GameObject:
   - component: {fileID: 2127397709399296606}
   - component: {fileID: 5082556967327965645}
   - component: {fileID: 657545882}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2691,7 +2691,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2734,7 +2734,7 @@ GameObject:
   - component: {fileID: 1644908651467644391}
   - component: {fileID: 6909913457876259054}
   - component: {fileID: 657545886}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2816,7 +2816,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2859,7 +2859,7 @@ GameObject:
   - component: {fileID: 5522085067880286368}
   - component: {fileID: 2536862618584765677}
   - component: {fileID: 657545871}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2941,7 +2941,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3041,7 +3041,7 @@ GameObject:
   - component: {fileID: 2701559793091680348}
   - component: {fileID: 8245588122109633534}
   - component: {fileID: 657545864}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3123,7 +3123,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3263,7 +3263,7 @@ GameObject:
   - component: {fileID: 5884681731508142259}
   - component: {fileID: 3540661494692225859}
   - component: {fileID: 657545883}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: BeyazTabla (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3345,7 +3345,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
