@@ -11,7 +11,7 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
     //[HideInInspector] public bool settledDown;
     [SerializeField] LayerMask dominoAreaMask;
     [SerializeField] LayerMask targetMask;
-    [SerializeField] LayerMask setleDomino;
+    
     float rotationZ = 0;
     Vector3 _ofset;
     Vector3 _firstPos;
@@ -25,7 +25,7 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
    
     public void OnDrag(PointerEventData eventData)
     {
-        transform.localScale = new Vector3(0.78f, 0.78f, 0.78f);
+        transform.localScale = new Vector3(0.83f, 0.83f, 0.83f);
         Vector3 _target = Camera.main.ScreenToWorldPoint(eventData.position);
         _target += _ofset;
         _target.z = 0;
@@ -69,18 +69,32 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
         Collider2D col = ColliderHit(targetMask);
         if (col != null)
         {
-            float _x = 0;
-            float _y = 0;
-            for (int i = 0; i < transform.childCount; i++)
+            if (col.GetComponent<TableCellManager>().OnChildDominoBase==null)
             {
-                _x += transform.GetChild(i).GetComponent<MakeARayCastHit>().HitPos().x;
-                _y += transform.GetChild(i).GetComponent<MakeARayCastHit>().HitPos().y;
-                transform.GetChild(i).GetComponent<MakeARayCastHit>().ColliderHit().transform.GetComponent<Collider2D>().enabled = false;
+               
+                float _x = 0;
+                float _y = 0;
+                float _z = 0;
+                for (int i = 0; i < transform.childCount; i++)
+                {
+                    _x += transform.GetChild(i).GetComponent<MakeARayCastHit>().HitPos().x;
+                    _y += transform.GetChild(i).GetComponent<MakeARayCastHit>().HitPos().y;
+                    _z += transform.GetChild(i).GetComponent<MakeARayCastHit>().HitPos().z;
+                    transform.GetChild(i).GetComponent<MakeARayCastHit>().SetOnChildDominoBase();
+                }
+                transform.position = new Vector3(_x / 2, _y / 2, _z/2);
+                _x = 0;
+                _y = 0;
+                _z = 0;
+                EventManager.SettledDownDomino();
+                
+                col.GetComponentInParent<TableManager>().CheckCell();
             }
-            transform.position = new Vector3(_x / 2, _y / 2, 0);
-            _x = 0;
-            _y = 0;
-            EventManager.SettledDownDomino();
+            else
+            {
+                BackFirstPos();
+            }
+            
         }
         else
         {

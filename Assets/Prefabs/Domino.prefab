@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2804563250262326318}
   - component: {fileID: 2491726500468858343}
   - component: {fileID: 4415222119854226423}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LeftDomino
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,7 +182,7 @@ GameObject:
   - component: {fileID: 2383891323730010357}
   - component: {fileID: 5343064806192223704}
   - component: {fileID: 4781432126376775878}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RightDomino
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -417,9 +417,6 @@ MonoBehaviour:
   targetMask:
     serializedVersion: 2
     m_Bits: 2048
-  setleDomino:
-    serializedVersion: 2
-    m_Bits: 512
 --- !u!50 &1752746752
 Rigidbody2D:
   serializedVersion: 4
