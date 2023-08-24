@@ -123,7 +123,7 @@ public class TableManager : MonoBehaviour
                     {
                         if (_tableCells[j].transform.localPosition.y == i)
                         {
-                            _tableCells[j].GetComponent<TableCellManager>().OnChildDominoBase.gameObject.SetActive(false);
+                            Destroy(_tableCells[j].GetComponent<TableCellManager>().OnChildDominoBase.gameObject);
                             _tableCells[j].GetComponent<TableCellManager>().OnChildDominoBase = null;
                         }
                     }

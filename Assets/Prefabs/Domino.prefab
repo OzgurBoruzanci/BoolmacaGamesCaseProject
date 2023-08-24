@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eee757eac4f824448cf9a1ff9142c5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManagerSC: {fileID: 11400000, guid: 499c745ba7255f3478982f419fe2ec69, type: 2}
   purpleDominoSprites:
   - {fileID: 21300000, guid: 18c9ba34f3db96b44a09d0fa2e23f208, type: 3}
   - {fileID: 21300000, guid: 71cb0649a714532438a49b982d468a87, type: 3}
@@ -140,9 +141,11 @@ MonoBehaviour:
   targetMask:
     serializedVersion: 2
     m_Bits: 2048
-  setleDominoMask:
+  childDominoMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 256
+  isOnPointerUp: 0
+  equalSprites: 
 --- !u!61 &4415222119854226423
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -156,7 +159,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0070293546, y: 0.028983355}
+  m_Offset: {x: -0.007029295, y: 0.5090405}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -167,7 +170,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.5969949, y: 3.5579667}
+  m_Size: {x: 3.7, y: 2.7}
   m_EdgeRadius: 0
 --- !u!1 &3054552039763211005
 GameObject:
@@ -266,6 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eee757eac4f824448cf9a1ff9142c5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManagerSC: {fileID: 11400000, guid: 499c745ba7255f3478982f419fe2ec69, type: 2}
   purpleDominoSprites:
   - {fileID: 21300000, guid: 18c9ba34f3db96b44a09d0fa2e23f208, type: 3}
   - {fileID: 21300000, guid: 71cb0649a714532438a49b982d468a87, type: 3}
@@ -309,9 +313,11 @@ MonoBehaviour:
   targetMask:
     serializedVersion: 2
     m_Bits: 2048
-  setleDominoMask:
+  childDominoMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 256
+  isOnPointerUp: 0
+  equalSprites: 
 --- !u!61 &4781432126376775878
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -325,7 +331,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0022805333, y: -0.02058196}
+  m_Offset: {x: 0.0022804737, y: -0.51317537}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -336,7 +342,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.5999084, y: 3.541164}
+  m_Size: {x: 3.7, y: 2.7}
   m_EdgeRadius: 0
 --- !u!1 &4772848793372113672
 GameObject:
@@ -386,7 +392,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.011275828, y: -0.007879972}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -397,7 +403,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.6413903, y: 7.102694}
+  m_Size: {x: 3.74, y: 7.4}
   m_EdgeRadius: 0
 --- !u!114 &3145773547804046954
 MonoBehaviour:
@@ -411,12 +417,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea72a0b944154344db21153e5bbcfaf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManagerSC: {fileID: 11400000, guid: 499c745ba7255f3478982f419fe2ec69, type: 2}
   dominoAreaMask:
     serializedVersion: 2
     m_Bits: 1024
   targetMask:
     serializedVersion: 2
     m_Bits: 2048
+  isHardMode: 1
 --- !u!50 &1752746752
 Rigidbody2D:
   serializedVersion: 4

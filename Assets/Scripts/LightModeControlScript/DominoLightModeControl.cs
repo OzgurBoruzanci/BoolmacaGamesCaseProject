@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DominoLightModeControl : MonoBehaviour
 {
+    public GameManagerSC gameManagerSC;
     bool _domino;
     bool _whiteBackground;
     public List<Sprite> purpleDominoSprites;
@@ -15,9 +16,30 @@ public class DominoLightModeControl : MonoBehaviour
         SelectDominoSprite();
     }
 
-
+    private void OnEnable()
+    {
+        EventManager.LightControl += LightControl;
+        EventManager.DominoSprite += DominoSprite;
+    }
+    private void OnDisable()
+    {
+        EventManager.LightControl -= LightControl;
+        EventManager.DominoSprite -= DominoSprite;
+    }
+    void DominoSprite(bool dominoS)
+    {
+        _domino = dominoS;
+        SelectDominoSprite();
+    }
+    void LightControl(bool lightCntrl)
+    {
+        _whiteBackground = lightCntrl;
+        SelectDominoSprite();
+    }
     void SelectDominoSprite()
     {
+        _domino = gameManagerSC.dominoSprite;
+        _whiteBackground = gameManagerSC.lightControl;
         if (_domino && _whiteBackground)
         {
             transform.GetComponent<SpriteRenderer>().sprite = purpleDominoSprites[Random.Range(0, 5)];

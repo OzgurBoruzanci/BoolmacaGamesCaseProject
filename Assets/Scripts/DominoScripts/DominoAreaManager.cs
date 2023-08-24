@@ -17,16 +17,6 @@ public class DominoAreaManager : DominaAreaLightControl
         EventManager.MouseClick -= MouseClick;
         EventManager.SettledDownDomino -= SettledDownDomino;
     }
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void MouseClick()
     {
