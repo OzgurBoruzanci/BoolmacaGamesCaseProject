@@ -11,7 +11,7 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
     //[HideInInspector] public bool settledDown;
     [SerializeField] LayerMask dominoAreaMask;
     [SerializeField] LayerMask targetMask;
-    
+    bool _clickable = true;
     float rotationZ = 0;
     Vector3 _ofset;
     Vector3 _firstPos;
@@ -25,25 +25,32 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
    
     public void OnDrag(PointerEventData eventData)
     {
-        transform.localScale = new Vector3(0.83f, 0.83f, 0.83f);
-        Vector3 _target = Camera.main.ScreenToWorldPoint(eventData.position);
-        _target += _ofset;
-        _target.z = 0;
-        transform.position = _target;
+        if (_clickable)
+        {
+            transform.localScale = new Vector3(0.83f, 0.83f, 0.83f);
+            Vector3 _target = Camera.main.ScreenToWorldPoint(eventData.position);
+            _target += _ofset;
+            _target.z = 0;
+            transform.position = _target;
+        }
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        //transform.Rotate(new Vector3(transform.rotation.x, transform.rotation.y, rotationZ + 90));
-        //EventManager.MouseClick();
-        Vector3 _target = Camera.main.ScreenToWorldPoint(eventData.position);
-        _ofset = transform.position - _target;
+        if (_clickable)
+        {
+            Vector3 _target = Camera.main.ScreenToWorldPoint(eventData.position);
+            _ofset = transform.position - _target;
+        }
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        RotateOnClick();
-        ColliderHitController();
+        if (_clickable)
+        {
+            RotateOnClick();
+            ColliderHitController();
+        }
     }
 
     Collider2D ColliderHit(LayerMask layerMask)
@@ -69,7 +76,8 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
         Collider2D col = ColliderHit(targetMask);
         if (col != null)
         {
-            if (col.GetComponent<TableCellManager>().OnChildDominoBase==null)
+            if (col.GetComponent<TableCellManager>().OnChildDominoBase==null &&
+                ChildColliderHitController())
             {
                
                 float _x = 0;
@@ -87,7 +95,7 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
                 _y = 0;
                 _z = 0;
                 EventManager.SettledDownDomino();
-                
+                _clickable = false;
                 col.GetComponentInParent<TableManager>().CheckCell();
             }
             else
@@ -101,6 +109,20 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
             BackFirstPos();
         }
     }
+
+    bool ChildColliderHitController()
+    {
+        if (transform.GetChild(0).GetComponent<MakeARayCastHit>().IsFullHit() &&
+            transform.GetChild(1).GetComponent<MakeARayCastHit>().IsFullHit())
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
     void BackFirstPos()
     {
         transform.position = _firstPos;

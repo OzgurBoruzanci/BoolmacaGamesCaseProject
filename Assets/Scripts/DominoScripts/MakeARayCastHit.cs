@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
 
 public class MakeARayCastHit : MonoBehaviour
@@ -34,14 +35,27 @@ public class MakeARayCastHit : MonoBehaviour
         Collider2D col = Physics2D.OverlapPoint(transform.position, targetMask, 0, 10);
         return col;
     }
+
+    public bool IsFullHit()
+    {
+        Collider2D hit = ColliderHit();
+        if (hit)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
     public RaycastHit2D LeftHit()
     {
         RaycastHit2D hit;
         var origin = transform.position;
         hit = Physics2D.Raycast(origin, Vector3.left, 5, childDominoMask);
-        if (hit)
+        if (hit.collider)
         {
-            Debug.Log("diðer  " + hit.transform.name);
+            Debug.Log("diðer sol  " + hit.transform.name);
         }
         return hit;
     }
@@ -49,10 +63,10 @@ public class MakeARayCastHit : MonoBehaviour
     {
         RaycastHit2D hit;
         var origin = transform.position;
-        hit = Physics2D.Raycast(origin, Vector3.right, 3, childDominoMask);
-        if (hit)
+        hit = Physics2D.Raycast(origin, transform.right, 3, childDominoMask);
+        if (hit.collider)
         {
-            Debug.Log("diðer  " + hit.transform.name);
+            Debug.Log("diðer sað  " + hit.transform.name);
         }
         return hit;
     }
@@ -60,10 +74,10 @@ public class MakeARayCastHit : MonoBehaviour
     {
         RaycastHit2D hit;
         var origin = transform.position;
-        hit = Physics2D.Raycast(origin, Vector3.up, 3, childDominoMask);
-        if (hit)
+        hit = Physics2D.Raycast(origin, transform.up, 3, childDominoMask);
+        if (hit.collider)
         {
-            Debug.Log("diðer  " + hit.transform.name);
+            Debug.Log("diðer yukarý  " + hit.transform.name);
         }
         return hit;
     }
@@ -72,10 +86,17 @@ public class MakeARayCastHit : MonoBehaviour
         RaycastHit2D hit;
         var origin = transform.position;
         hit = Physics2D.Raycast(origin, Vector3.down, 3, childDominoMask);
-        if (hit)
+        if (hit.collider)
         {
-            Debug.Log("diðer  " + hit.transform.name);
+            Debug.Log("diðer aþaðý " + hit.transform.name);
         }
         return hit;
+    }
+    void Update()
+    {
+        Debug.DrawLine(transform.position, transform.position+transform.right*3, Color.white);
+        Debug.DrawLine(transform.position, transform.position-transform.right*3, Color.green);
+        Debug.DrawLine(transform.position, transform.position+transform.up*3, Color.blue);
+        Debug.DrawLine(transform.position, transform.position-transform.up* 3, Color.red);
     }
 }

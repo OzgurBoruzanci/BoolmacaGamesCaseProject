@@ -14,10 +14,9 @@ public class ChildDominoBase : MakeARayCastHit
     {
         EventManager.SettledDownDomino -= SettledDownDomino;
     }
+    
     void SettledDownDomino()
     {
-        //Debug.Log(setleDominoMask);
-        //this.gameObject.layer = setleDominoMask;
         CheckNextDomino();
     }
     //private void OnTriggerEnter2D(Collider2D collision)
@@ -42,22 +41,22 @@ public class ChildDominoBase : MakeARayCastHit
         RaycastHit2D hitRight = RightHit();
         RaycastHit2D hitUp=UpHit();
         RaycastHit2D hitDown = DownHit();
-        if (hitLeft && transform.GetComponent<SpriteRenderer>().sprite==hitLeft.transform.GetComponent<SpriteRenderer>().sprite)
+        if (hitLeft && transform.GetComponent<SpriteRenderer>().sprite==hitLeft.collider.transform.GetComponent<SpriteRenderer>().sprite)
         {
             Debug.Log("hitLeft " + hitLeft.transform.name);
             checkNextDominos.Add(true);
         }
-        if (hitRight && transform.GetComponent<SpriteRenderer>().sprite == hitRight.transform.GetComponent<SpriteRenderer>().sprite)
+        if (hitRight && transform.GetComponent<SpriteRenderer>().sprite == hitRight.collider.transform.GetComponent<SpriteRenderer>().sprite)
         {
             Debug.Log("hitRight " + hitRight.transform.name);
             checkNextDominos.Add(true);
         }
-        if (hitUp && transform.GetComponent<SpriteRenderer>().sprite == hitUp.transform.GetComponent<SpriteRenderer>().sprite)
+        if (hitUp && transform.GetComponent<SpriteRenderer>().sprite == hitUp.collider.transform.GetComponent<SpriteRenderer>().sprite)
         {
             Debug.Log("hitUp " + hitUp.transform.name);
             checkNextDominos.Add(true);
         }
-        if (hitDown && transform.GetComponent<SpriteRenderer>().sprite == hitDown.transform.GetComponent<SpriteRenderer>().sprite)
+        if (hitDown && transform.GetComponent<SpriteRenderer>().sprite == hitDown.collider.transform.GetComponent<SpriteRenderer>().sprite)
         {
             Debug.Log("hitDown " + hitDown.transform.name);
             checkNextDominos.Add(true);
