@@ -118,67 +118,16 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
             {
                 if (!isHardMode)
                 {
-                    int firstChild = CheckOtherFirstChildDomino();
-                    int secondChild = CheckOtherSecondChildDomino();
-                    if (firstChild > 0 || secondChild > 0)
-                    {
-                        if (col.GetComponent<TableCellManager>().OnChildDominoBase == null &&
-                    ChildColliderHitController())
-                        {
-                            PlacesDomino();
-                            EventManager.SettledDownDomino();
-                            _clickable = false;
-                            col.GetComponentInParent<TableManager>().CheckCell();
-                        }
-                        else
-                        {
-                            BackFirstPos();
-                        }
-                    }
-                    else
-                    {
-                        BackFirstPos();
-                    }
+                    HardModeOff(col);
                 }
                 else
                 {
-                    int firstChild = CheckOtherFirstChildDomino();
-                    int secondChild = CheckOtherSecondChildDomino();
-                    if (firstChild > 0 && secondChild > 0)
-                    {
-                        if (col.GetComponent<TableCellManager>().OnChildDominoBase == null &&
-                    ChildColliderHitController())
-                        {
-                            PlacesDomino();
-                            EventManager.SettledDownDomino();
-                            _clickable = false;
-                            col.GetComponentInParent<TableManager>().CheckCell();
-                        }
-                        else
-                        {
-                            BackFirstPos();
-                        }
-                    }
-                    else
-                    {
-                        BackFirstPos();
-                    }
+                    HardModeOn(col);
                 }
             }
             else
             {
-                if (col.GetComponent<TableCellManager>().OnChildDominoBase == null &&
-                   ChildColliderHitController())
-                {
-                    PlacesDomino();
-                    EventManager.SettledDownDomino();
-                    _clickable = false;
-                    col.GetComponentInParent<TableManager>().CheckCell();
-                }
-                else
-                {
-                    BackFirstPos();
-                }
+                SettledDownDomino(col);
             }
         }
         else
@@ -187,6 +136,47 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
         }
     }
 
+    void HardModeOff(Collider2D col)
+    {
+        int firstChild = CheckOtherFirstChildDomino();
+        int secondChild = CheckOtherSecondChildDomino();
+        if (firstChild > 0 || secondChild > 0)
+        {
+            SettledDownDomino(col);
+        }
+        else
+        {
+            BackFirstPos();
+        }
+    }
+    void HardModeOn(Collider2D col)
+    {
+        int firstChild = CheckOtherFirstChildDomino();
+        int secondChild = CheckOtherSecondChildDomino();
+        if (firstChild > 0 && secondChild > 0)
+        {
+            SettledDownDomino(col);
+        }
+        else
+        {
+            BackFirstPos();
+        }
+    }
+    void SettledDownDomino(Collider2D col)
+    {
+        if (col.GetComponent<TableCellManager>().OnChildDominoBase == null &&
+                   ChildColliderHitController())
+        {
+            PlacesDomino();
+            EventManager.SettledDownDomino();
+            _clickable = false;
+            col.GetComponentInParent<TableManager>().CheckCell();
+        }
+        else
+        {
+            BackFirstPos();
+        }
+    }
     int CheckOtherFirstChildDomino()
     {
         int isTrue = 0;
