@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c381ea415375f74ca89cdbbac86895e, type: 3}
   m_Name: NEW GameManagerSC
   m_EditorClassIdentifier: 
-  hardMod: 0
+  hardMod: 1
   lightControl: 0
   dominoSprite: 1

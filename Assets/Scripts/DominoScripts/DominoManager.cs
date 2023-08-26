@@ -10,7 +10,6 @@ using static UnityEngine.UI.Image;
 public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
 {
     public GameManagerSC gameManagerSC;
-    //[HideInInspector] public bool settledDown;
     [SerializeField] LayerMask dominoAreaMask;
     [SerializeField] LayerMask targetMask;
     bool _clickable = true;
@@ -18,8 +17,6 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
     Vector3 _ofset;
     Vector3 _firstPos;
     public bool isHardMode = false;
-    bool hitTheDomino = false;
-    bool setleDomino = false;
 
     private void OnEnable()
     {
@@ -39,21 +36,6 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
     {
         DestroyDomino();
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.GetComponent<DominoManager>() && !setleDomino)
-        {
-            hitTheDomino = true;
-        }
-    }
-    //private void OnTriggerExit2D(Collider2D collision)
-    //{
-    //    if (collision.GetComponent<DominoManager>() && !setleDomino)
-    //    {
-    //        hitTheDomino = false;
-    //    }
-    //}
-
 
     public void OnDrag(PointerEventData eventData)
     {
@@ -113,21 +95,13 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
         Collider2D col = ColliderHit(targetMask);
         if (col != null)
         {
-            //ChildsPointerUp();
-            if (hitTheDomino)
+            if (!isHardMode)
             {
-                if (!isHardMode)
-                {
-                    HardModeOff(col);
-                }
-                else
-                {
-                    HardModeOn(col);
-                }
+                HardModeOff(col);
             }
             else
             {
-                SettledDownDomino(col);
+                HardModeOn(col);
             }
         }
         else
@@ -140,26 +114,56 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
     {
         int firstChild = CheckOtherFirstChildDomino();
         int secondChild = CheckOtherSecondChildDomino();
-        if (firstChild > 0 || secondChild > 0)
+        if (firstChild == -1 && secondChild == -1)
+        {
+            SettledDownDomino(col);
+        }
+        else if (secondChild==-1 && firstChild > 0)
+        {
+            SettledDownDomino(col);
+        }
+        else if (firstChild == -1 && secondChild > 0)
         {
             SettledDownDomino(col);
         }
         else
         {
-            BackFirstPos();
+            if (firstChild > 0 || secondChild > 0)
+            {
+                SettledDownDomino(col);
+            }
+            else
+            {
+                BackFirstPos();
+            }
         }
     }
     void HardModeOn(Collider2D col)
     {
         int firstChild = CheckOtherFirstChildDomino();
         int secondChild = CheckOtherSecondChildDomino();
-        if (firstChild > 0 && secondChild > 0)
+        if (firstChild == -1 && secondChild == -1)
+        {
+            SettledDownDomino(col);
+        }
+        else if (secondChild == -1 && firstChild > 0)
+        {
+            SettledDownDomino(col);
+        }
+        else if (firstChild == -1 && secondChild > 0)
         {
             SettledDownDomino(col);
         }
         else
         {
-            BackFirstPos();
+            if (firstChild > 0 && secondChild > 0)
+            {
+                SettledDownDomino(col);
+            }
+            else
+            {
+                BackFirstPos();
+            }
         }
     }
     void SettledDownDomino(Collider2D col)
@@ -167,10 +171,7 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
         if (col.GetComponent<TableCellManager>().OnChildDominoBase == null &&
                    ChildColliderHitController())
         {
-            PlacesDomino();
-            EventManager.SettledDownDomino();
-            _clickable = false;
-            col.GetComponentInParent<TableManager>().CheckCell();
+            PlacesDomino(col);
         }
         else
         {
@@ -180,10 +181,11 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
     int CheckOtherFirstChildDomino()
     {
         int isTrue = 0;
-        transform.GetChild(0).GetComponent<ChildDominoBase>().OnHitTheDomino();
-        int childListCount = transform.GetChild(0).GetComponent<ChildDominoBase>().equalSprites.Count;
-        if (childListCount > 0)
+        transform.GetChild(0).GetComponent<ChildDominoBase>().CheckNextDomino();
+        bool didItHitTheDominoes = transform.GetChild(0).GetComponent<ChildDominoBase>().DidNotHitTheDominoes();
+        if (!didItHitTheDominoes)
         {
+            int childListCount = transform.GetChild(0).GetComponent<ChildDominoBase>().equalSprites.Count;
             for (int i = 0; i < childListCount; i++)
             {
                 bool childListBool = transform.GetChild(0).GetComponent<ChildDominoBase>().equalSprites[i];
@@ -193,16 +195,21 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
                 }
             }
         }
+        else
+        {
+            isTrue--;
+        }
         transform.GetChild(0).GetComponent<ChildDominoBase>().equalSprites.Clear();
         return isTrue;
     }
     int CheckOtherSecondChildDomino()
     {
         int isTrue = 0;
-        transform.GetChild(1).GetComponent<ChildDominoBase>().OnHitTheDomino();
-        int childListCount = transform.GetChild(1).GetComponent<ChildDominoBase>().equalSprites.Count;
-        if (childListCount > 0)
+        transform.GetChild(1).GetComponent<ChildDominoBase>().CheckNextDomino();
+        bool didItHitTheDominoes = transform.GetChild(1).GetComponent<ChildDominoBase>().DidNotHitTheDominoes();
+        if (!didItHitTheDominoes)
         {
+            int childListCount = transform.GetChild(1).GetComponent<ChildDominoBase>().equalSprites.Count;
             for (int i = 0; i < childListCount; i++)
             {
                 bool childListBool = transform.GetChild(1).GetComponent<ChildDominoBase>().equalSprites[i];
@@ -212,10 +219,14 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
                 }
             }
         }
+        else
+        {
+            isTrue--;
+        }
         transform.GetChild(1).GetComponent<ChildDominoBase>().equalSprites.Clear();
         return isTrue;
     }
-    void PlacesDomino()
+    void PlacesDomino(Collider2D col)
     {
         float _x = 0;
         float _y = 0;
@@ -231,6 +242,10 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
         _x = 0;
         _y = 0;
         _z = 0;
+
+        EventManager.SettledDownDomino();
+        _clickable = false;
+        col.GetComponentInParent<TableManager>().CheckCell();
     }
     bool ChildColliderHitController()
     {
@@ -250,8 +265,6 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
         EventManager.DidNotSettle();
         transform.position = _firstPos;
         transform.localScale = Vector3.one;
-        hitTheDomino = false;
-        setleDomino = false;
     }
     public void DestroyDomino()
     {

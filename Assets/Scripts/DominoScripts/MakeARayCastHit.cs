@@ -1,5 +1,6 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.PlayerLoop;
@@ -46,6 +47,63 @@ public class MakeARayCastHit : MonoBehaviour
         else
         {
             return false;
+        }
+    }
+
+    public Collider2D LeftHit()
+    {
+        RaycastHit2D hit;
+        var origin = transform.position;
+        hit = Physics2D.Raycast(origin, Vector2.left, 2, childDominoMask);
+        if (hit && transform.parent != hit.collider.transform.parent)
+        {
+            return hit.collider;
+        }
+        else
+        {
+            return null;
+        }
+    }
+    public Collider2D RightHit()
+    {
+        RaycastHit2D hit;
+        var origin = transform.position;
+        hit = Physics2D.Raycast(origin, Vector2.right, 2, childDominoMask);
+        if (hit && transform.parent != hit.collider.transform.parent)
+        {
+            return hit.collider;
+        }
+        else
+        {
+            return null;
+        }
+    }
+    public Collider2D UpHit()
+    {
+        RaycastHit2D hit;
+        var origin = transform.position;
+        hit = Physics2D.Raycast(origin, Vector2.up, 2, childDominoMask);
+        if (hit && transform.parent != hit.collider.transform.parent)
+        {
+            return hit.collider;
+        }
+        else
+        {
+            return null;
+        }
+    }
+    public Collider2D DownHit()
+    {
+        RaycastHit2D hit;
+        var origin = transform.position;
+        hit = Physics2D.Raycast(origin, Vector2.down, 2, childDominoMask);
+        if (hit && transform.parent != hit.collider.transform.parent)
+        {
+            return hit.collider;
+        }
+        else
+        {
+            return null;
         }
     }
 }

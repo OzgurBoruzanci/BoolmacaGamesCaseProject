@@ -4,65 +4,62 @@ using UnityEngine;
 
 public class ChildDominoBase : MakeARayCastHit
 {
-    GameObject collObject;
-    bool setleDomino = false;
-    bool hitTheDomino = false;
+    bool didNotHitTheDominoes = false;
     [HideInInspector] public bool isOnPointerUp=false;
     [HideInInspector] public List<bool> equalSprites;
 
     private void OnEnable()
     {
-        EventManager.SettledDownDomino += SettledDownDomino;
         EventManager.DidNotSettle += DidNotSettle;
     }
     private void OnDisable()
     {
-        EventManager.SettledDownDomino -= SettledDownDomino;
         EventManager.DidNotSettle -= DidNotSettle;
     }
 
-    void SettledDownDomino()
-    {
-        setleDomino = true;
-    }
     void DidNotSettle()
     {
-        setleDomino = false;
         equalSprites.Clear();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public bool DidNotHitTheDominoes()
     {
-        if (collision.GetComponent<MakeARayCastHit>() && !setleDomino)
+        Collider2D hitLeft = LeftHit();
+        Collider2D hitRight = RightHit();
+        Collider2D hitUp = UpHit();
+        Collider2D hitDown = DownHit();
+        if (!hitDown && !hitLeft && !hitRight && !hitUp)
         {
-            collObject= collision.gameObject;
-            hitTheDomino = true;
-            if (transform.GetComponent<SpriteRenderer>().sprite == collision.GetComponent<SpriteRenderer>().sprite)
-            {
-                equalSprites.Add(true);
-            }
-            else
-            {
-                equalSprites.Add(false);
-            }
+            didNotHitTheDominoes= true;
         }
-
+        return didNotHitTheDominoes;
     }
-    private void OnTriggerExit2D(Collider2D collision)
+
+
+    public void CheckNextDomino()
     {
-        if (collObject==collision.gameObject)
+        Collider2D hitLeft = LeftHit();
+        Collider2D hitRight = RightHit();
+        Collider2D hitUp = UpHit();
+        Collider2D hitDown = DownHit();
+        if (hitLeft && transform.GetComponent<SpriteRenderer>().sprite == hitLeft.transform.GetComponent<SpriteRenderer>().sprite)
         {
-            hitTheDomino = false;
-
-        }
-
-    }
-    public void OnHitTheDomino()
-    {
-        if (!hitTheDomino)
-        {
-
             equalSprites.Add(true);
         }
+
+        if (hitRight && transform.GetComponent<SpriteRenderer>().sprite == hitRight.transform.GetComponent<SpriteRenderer>().sprite)
+        {
+            equalSprites.Add(true);
+        }
+        if (hitUp && transform.GetComponent<SpriteRenderer>().sprite == hitUp.transform.GetComponent<SpriteRenderer>().sprite)
+        {
+            equalSprites.Add(true);
+        }
+        if (hitDown && transform.GetComponent<SpriteRenderer>().sprite == hitDown.transform.GetComponent<SpriteRenderer>().sprite)
+        {
+            equalSprites.Add(true);
+        }
+        
     }
+
 }
