@@ -54,7 +54,7 @@ public class MakeARayCastHit : MonoBehaviour
     {
         RaycastHit2D hit;
         var origin = transform.position;
-        hit = Physics2D.Raycast(origin, Vector2.left, 2, childDominoMask);
+        hit = Physics2D.Raycast(origin, Vector2.left, 3.5f, childDominoMask);
         if (hit && transform.parent != hit.collider.transform.parent)
         {
             return hit.collider;
@@ -68,7 +68,7 @@ public class MakeARayCastHit : MonoBehaviour
     {
         RaycastHit2D hit;
         var origin = transform.position;
-        hit = Physics2D.Raycast(origin, Vector2.right, 2, childDominoMask);
+        hit = Physics2D.Raycast(origin, Vector2.right, 3.5f, childDominoMask);
         if (hit && transform.parent != hit.collider.transform.parent)
         {
             return hit.collider;
@@ -82,7 +82,7 @@ public class MakeARayCastHit : MonoBehaviour
     {
         RaycastHit2D hit;
         var origin = transform.position;
-        hit = Physics2D.Raycast(origin, Vector2.up, 2, childDominoMask);
+        hit = Physics2D.Raycast(origin, Vector2.up, 3.5f, childDominoMask);
         if (hit && transform.parent != hit.collider.transform.parent)
         {
             return hit.collider;
@@ -96,7 +96,7 @@ public class MakeARayCastHit : MonoBehaviour
     {
         RaycastHit2D hit;
         var origin = transform.position;
-        hit = Physics2D.Raycast(origin, Vector2.down, 2, childDominoMask);
+        hit = Physics2D.Raycast(origin, Vector2.down, 3.5f, childDominoMask);
         if (hit && transform.parent != hit.collider.transform.parent)
         {
             return hit.collider;

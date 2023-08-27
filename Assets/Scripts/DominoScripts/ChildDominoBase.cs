@@ -30,7 +30,11 @@ public class ChildDominoBase : MakeARayCastHit
         Collider2D hitDown = DownHit();
         if (!hitDown && !hitLeft && !hitRight && !hitUp)
         {
-            didNotHitTheDominoes= true;
+            didNotHitTheDominoes = true;
+        }
+        else
+        {
+            didNotHitTheDominoes = false;
         }
         return didNotHitTheDominoes;
     }

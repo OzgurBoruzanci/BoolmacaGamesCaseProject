@@ -124,6 +124,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}
 --- !u!1 &817378228596062130
@@ -347,6 +350,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}
 --- !u!1 &1117846378747981510
@@ -473,6 +479,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}
 --- !u!1 &1174865768335486160
@@ -599,6 +608,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}
 --- !u!1 &1341491497200121105
@@ -725,6 +737,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}
 --- !u!1 &1466650046480183977
@@ -851,6 +866,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}
 --- !u!1 &1702981801817103174
@@ -977,6 +995,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}
 --- !u!1 &2362921114132011514
@@ -1103,6 +1124,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}
 --- !u!1 &2592418731118426565
@@ -1229,6 +1253,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}
 --- !u!1 &2604904250886832236
@@ -1355,6 +1382,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}
 --- !u!1 &2995564269169715519
@@ -1481,6 +1511,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}
 --- !u!1 &3260484650382961400
@@ -1607,6 +1640,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}
 --- !u!1 &3712554206621306947
@@ -1733,6 +1769,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}
 --- !u!1 &4071910152063731732
@@ -1859,6 +1898,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}
 --- !u!1 &4349415523045534183
@@ -1985,6 +2027,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}
 --- !u!1 &4826030893627532681
@@ -2111,6 +2156,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}
 --- !u!1 &5440406188985864300
@@ -2237,6 +2285,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}
 --- !u!1 &5738821848848414518
@@ -2363,6 +2414,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}
 --- !u!1 &5910861147813150278
@@ -2489,6 +2543,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}
 --- !u!1 &6494319440627637888
@@ -2615,6 +2672,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}
 --- !u!1 &6845845640197726016
@@ -2741,6 +2801,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}
 --- !u!1 &6938869394813294864
@@ -2867,6 +2930,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}
 --- !u!1 &7989677900800170032
@@ -2993,6 +3059,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}
 --- !u!1 &8114412701062710009
@@ -3189,6 +3258,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}
 --- !u!1 &8986953562088563930
@@ -3412,5 +3484,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackSprite: {fileID: 21300000, guid: 158c7492b7f2ba942a6903c67207ead8, type: 3}
   whiteSprite: {fileID: 21300000, guid: 3cd31d8b8780c08419047c2db13a77d1, type: 3}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
   filled: 0
   OnChildDominoBase: {fileID: 0}

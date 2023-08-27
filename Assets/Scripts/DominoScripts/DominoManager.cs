@@ -142,6 +142,7 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
     {
         int firstChild = CheckOtherFirstChildDomino();
         int secondChild = CheckOtherSecondChildDomino();
+        Debug.Log(transform.name + " " + firstChild + " birinci  " + secondChild);
         if (firstChild == -1 && secondChild == -1)
         {
             SettledDownDomino(col);

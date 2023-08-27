@@ -29,6 +29,7 @@ public class TableManager : MonoBehaviour
         CheckAndDestroyRowCell();
         CheckAndDestroyColumnCell();
     }
+    
     bool IsFullRow(int row)
     {
         for (int i = -6; i < 7f; i += 3)

@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class TableCellManager : LightModeControl
 {
+    [SerializeField] public LayerMask targetMask;
     [HideInInspector] public bool filled;
     public ChildDominoBase OnChildDominoBase;/* { get; set; }*/
+    List<bool> nullTableCells;
+
+    private void Start()
+    {
+        nullTableCells = new List<bool>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -40,4 +47,5 @@ public class TableCellManager : LightModeControl
             transform.GetComponent<SpriteRenderer>().sprite = blackSprite;
         }
     }
+
 }
