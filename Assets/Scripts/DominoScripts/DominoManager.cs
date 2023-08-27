@@ -31,12 +31,13 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
     {
         _firstPos = transform.position;
         isHardMode = gameManagerSC.hardMod;
+        EventManager.DominoSprites(CheckFirstDominoSprites(), CheckSecondDominoSprites());
+        
     }
     void Update()
     {
         DestroyDomino();
     }
-
     public void OnDrag(PointerEventData eventData)
     {
         if (_clickable)
@@ -71,7 +72,7 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
     {
         isHardMode = hardMode;
     }
-
+   
     Collider2D ColliderHit(LayerMask layerMask)
     {
         var origin = transform.position;
@@ -227,6 +228,16 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
         transform.GetChild(1).GetComponent<ChildDominoBase>().equalSprites.Clear();
         return isTrue;
     }
+    Sprite CheckFirstDominoSprites()
+    {
+        Sprite sprite = transform.GetChild(0).GetComponent<SpriteRenderer>().sprite;
+        return sprite;
+    }
+    Sprite CheckSecondDominoSprites()
+    {
+        Sprite sprite = transform.GetChild(1).GetComponent<SpriteRenderer>().sprite;
+        return sprite;
+    }
     void PlacesDomino(Collider2D col)
     {
         float _x = 0;
@@ -246,7 +257,8 @@ public class DominoManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
 
         EventManager.SettledDownDomino();
         _clickable = false;
-        col.GetComponentInParent<TableManager>().CheckCell();
+        EventManager.CheckCell();
+        EventManager.NewDomino();
     }
     bool ChildColliderHitController()
     {

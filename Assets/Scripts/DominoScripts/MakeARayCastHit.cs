@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class MakeARayCastHit : MonoBehaviour
 {
     [SerializeField] LayerMask targetMask;
-    public LayerMask childDominoMask;
+    [SerializeField] LayerMask childDominoMask;
     ChildDominoBase _childDominoBase;
 
     private void Start()

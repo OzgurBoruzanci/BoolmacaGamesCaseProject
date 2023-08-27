@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class CanvasLightControl : MonoBehaviour
 {
-    public CanvasScriptableObject canvasScriptableObject;
-
+    //public CanvasScriptableObject canvasScriptableObject;
+    [SerializeField] protected GameManagerSC gameManagerSC;
     public GameObject musicBtn;
     public Sprite musicLight;
     public Sprite musicDark;
@@ -30,11 +30,11 @@ public class CanvasLightControl : MonoBehaviour
 
     public void LightControl()
     {
-        if (canvasScriptableObject.lightControl)
+        if (gameManagerSC.lightControl)
         {
             lightControlBtn.GetComponent<Image>().sprite = lightControlDark;
             menuBtn.GetComponent<Image>().sprite = menuDark;
-            if (canvasScriptableObject.music)
+            if (gameManagerSC.music)
             {
                 musicBtn.GetComponent<Image>().sprite = musicDark;
             }
@@ -42,7 +42,7 @@ public class CanvasLightControl : MonoBehaviour
             {
                 musicBtn.GetComponent<Image>().sprite = musicOffDark;
             }
-            if (canvasScriptableObject.sound)
+            if (gameManagerSC.sound)
             {
                 soundBtn.GetComponent<Image>().sprite = soundDark;
             }
@@ -55,7 +55,7 @@ public class CanvasLightControl : MonoBehaviour
         {
             lightControlBtn.GetComponent<Image>().sprite = lightControlLight;
             menuBtn.GetComponent<Image>().sprite = menuLight;
-            if (canvasScriptableObject.music)
+            if (gameManagerSC.music)
             {
                 musicBtn.GetComponent<Image>().sprite = musicLight;
             }
@@ -63,7 +63,7 @@ public class CanvasLightControl : MonoBehaviour
             {
                 musicBtn.GetComponent<Image>().sprite = musicOffLight;
             }
-            if (canvasScriptableObject.sound)
+            if (gameManagerSC.sound)
             {
                 soundBtn.GetComponent<Image>().sprite = soundLight;
             }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4417763765577062229}
   - component: {fileID: 4859482409149930014}
   - component: {fileID: 6777456704572884524}
+  - component: {fileID: 3354760385924372787}
   - component: {fileID: 657545887}
   m_Layer: 11
   m_Name: BeyazTabla
@@ -110,6 +111,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &3354760385924372787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678021467551217928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,6 +255,7 @@ GameObject:
   - component: {fileID: 242024566836194510}
   - component: {fileID: 386681334814367203}
   - component: {fileID: 7686098858433896983}
+  - component: {fileID: 7278417204708291581}
   - component: {fileID: 657545874}
   m_Layer: 11
   m_Name: BeyazTabla (13)
@@ -336,6 +355,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &7278417204708291581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829920381050743113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,6 +402,7 @@ GameObject:
   - component: {fileID: 5440409019145160450}
   - component: {fileID: 4501260681457349995}
   - component: {fileID: 3834488143186591822}
+  - component: {fileID: 2693788218717029971}
   - component: {fileID: 657545884}
   m_Layer: 11
   m_Name: BeyazTabla (3)
@@ -465,6 +502,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &2693788218717029971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117846378747981510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,6 +549,7 @@ GameObject:
   - component: {fileID: 4541617480172237334}
   - component: {fileID: 6655603586336670405}
   - component: {fileID: 3245025853685794366}
+  - component: {fileID: 7898811485246407719}
   - component: {fileID: 657545872}
   m_Layer: 11
   m_Name: BeyazTabla (15)
@@ -594,6 +649,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &7898811485246407719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174865768335486160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -624,6 +696,7 @@ GameObject:
   - component: {fileID: 6141728841198957224}
   - component: {fileID: 4860576568402845856}
   - component: {fileID: 5106555137391557743}
+  - component: {fileID: 3078792488432811722}
   - component: {fileID: 657545865}
   m_Layer: 11
   m_Name: BeyazTabla (22)
@@ -723,6 +796,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &3078792488432811722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341491497200121105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -753,6 +843,7 @@ GameObject:
   - component: {fileID: 5351005557356741757}
   - component: {fileID: 6758258880433376783}
   - component: {fileID: 7328323209937368726}
+  - component: {fileID: 4220015218624744099}
   - component: {fileID: 657545878}
   m_Layer: 11
   m_Name: BeyazTabla (9)
@@ -852,6 +943,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &4220015218624744099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466650046480183977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -882,6 +990,7 @@ GameObject:
   - component: {fileID: 946224958687017242}
   - component: {fileID: 3037296621007753798}
   - component: {fileID: 7477855303829444970}
+  - component: {fileID: 8150535726611969340}
   - component: {fileID: 657545867}
   m_Layer: 11
   m_Name: BeyazTabla (20)
@@ -981,6 +1090,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &8150535726611969340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702981801817103174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1011,6 +1137,7 @@ GameObject:
   - component: {fileID: 2066808898895271880}
   - component: {fileID: 5456475211133853647}
   - component: {fileID: 3850570331522441861}
+  - component: {fileID: 5977213342523896664}
   - component: {fileID: 657545868}
   m_Layer: 11
   m_Name: BeyazTabla (19)
@@ -1110,6 +1237,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &5977213342523896664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2362921114132011514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1140,6 +1284,7 @@ GameObject:
   - component: {fileID: 1622660870060881998}
   - component: {fileID: 4401833628506459626}
   - component: {fileID: 3492625197049379675}
+  - component: {fileID: 395150063679468567}
   - component: {fileID: 657545870}
   m_Layer: 11
   m_Name: BeyazTabla (17)
@@ -1239,6 +1384,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &395150063679468567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592418731118426565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1269,6 +1431,7 @@ GameObject:
   - component: {fileID: 4148566890898839642}
   - component: {fileID: 7286179926748109413}
   - component: {fileID: 4217805876627942860}
+  - component: {fileID: 6852932053823229110}
   - component: {fileID: 657545880}
   m_Layer: 11
   m_Name: BeyazTabla (7)
@@ -1368,6 +1531,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &6852932053823229110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2604904250886832236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1398,6 +1578,7 @@ GameObject:
   - component: {fileID: 7616194598662200820}
   - component: {fileID: 2532170682944170459}
   - component: {fileID: 3554499861767860115}
+  - component: {fileID: 8433217830914118354}
   - component: {fileID: 657545875}
   m_Layer: 11
   m_Name: BeyazTabla (12)
@@ -1497,6 +1678,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &8433217830914118354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2995564269169715519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1527,6 +1725,7 @@ GameObject:
   - component: {fileID: 8773688906517566828}
   - component: {fileID: 261742311086913752}
   - component: {fileID: 398630102427735126}
+  - component: {fileID: 1191779422125114993}
   - component: {fileID: 657545876}
   m_Layer: 11
   m_Name: BeyazTabla (11)
@@ -1626,6 +1825,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &1191779422125114993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3260484650382961400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1656,6 +1872,7 @@ GameObject:
   - component: {fileID: 1094035296048991484}
   - component: {fileID: 3892591287401399341}
   - component: {fileID: 577030261108425752}
+  - component: {fileID: 7424086471466430342}
   - component: {fileID: 657545879}
   m_Layer: 11
   m_Name: BeyazTabla (8)
@@ -1755,6 +1972,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &7424086471466430342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3712554206621306947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1785,6 +2019,7 @@ GameObject:
   - component: {fileID: 1321620130132143113}
   - component: {fileID: 4217028764972403325}
   - component: {fileID: 5846457749028159286}
+  - component: {fileID: 7568887732563202521}
   - component: {fileID: 657545885}
   m_Layer: 11
   m_Name: BeyazTabla (2)
@@ -1884,6 +2119,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &7568887732563202521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4071910152063731732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1914,6 +2166,7 @@ GameObject:
   - component: {fileID: 2351491312516030931}
   - component: {fileID: 809583140269525698}
   - component: {fileID: 4677432499811651329}
+  - component: {fileID: 1293633018067148661}
   - component: {fileID: 657545866}
   m_Layer: 11
   m_Name: BeyazTabla (21)
@@ -2013,6 +2266,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &1293633018067148661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4349415523045534183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2043,6 +2313,7 @@ GameObject:
   - component: {fileID: 5564586685715149189}
   - component: {fileID: 4436093765241804624}
   - component: {fileID: 5162459082363012550}
+  - component: {fileID: 5636600904782174966}
   - component: {fileID: 657545877}
   m_Layer: 11
   m_Name: BeyazTabla (10)
@@ -2142,6 +2413,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &5636600904782174966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4826030893627532681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2172,6 +2460,7 @@ GameObject:
   - component: {fileID: 3921764110940744916}
   - component: {fileID: 9156216089037373499}
   - component: {fileID: 3314224290530153728}
+  - component: {fileID: 1302980624776441052}
   - component: {fileID: 657545869}
   m_Layer: 11
   m_Name: BeyazTabla (18)
@@ -2271,6 +2560,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &1302980624776441052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5440406188985864300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2301,6 +2607,7 @@ GameObject:
   - component: {fileID: 779007740113768086}
   - component: {fileID: 7397935595463332190}
   - component: {fileID: 8416948685619666561}
+  - component: {fileID: 4536931404405475549}
   - component: {fileID: 657545873}
   m_Layer: 11
   m_Name: BeyazTabla (14)
@@ -2400,6 +2707,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &4536931404405475549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5738821848848414518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2430,6 +2754,7 @@ GameObject:
   - component: {fileID: 3882995916398439342}
   - component: {fileID: 7716578609825609014}
   - component: {fileID: 4244539980731714619}
+  - component: {fileID: 5099311133192388454}
   - component: {fileID: 657545881}
   m_Layer: 11
   m_Name: BeyazTabla (6)
@@ -2529,6 +2854,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &5099311133192388454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5910861147813150278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2559,6 +2901,7 @@ GameObject:
   - component: {fileID: 4594455672260874571}
   - component: {fileID: 3472937175551845229}
   - component: {fileID: 8172128290203822375}
+  - component: {fileID: 6294191632043297343}
   - component: {fileID: 657545863}
   m_Layer: 11
   m_Name: BeyazTabla (24)
@@ -2658,6 +3001,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &6294191632043297343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6494319440627637888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2688,6 +3048,7 @@ GameObject:
   - component: {fileID: 5061225409558894173}
   - component: {fileID: 2127397709399296606}
   - component: {fileID: 5082556967327965645}
+  - component: {fileID: 3483354970888467684}
   - component: {fileID: 657545882}
   m_Layer: 11
   m_Name: BeyazTabla (5)
@@ -2787,6 +3148,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &3483354970888467684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6845845640197726016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2817,6 +3195,7 @@ GameObject:
   - component: {fileID: 3301412673159262747}
   - component: {fileID: 1644908651467644391}
   - component: {fileID: 6909913457876259054}
+  - component: {fileID: 2150333853583556914}
   - component: {fileID: 657545886}
   m_Layer: 11
   m_Name: BeyazTabla (1)
@@ -2916,6 +3295,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &2150333853583556914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6938869394813294864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2946,6 +3342,7 @@ GameObject:
   - component: {fileID: 950408752881210160}
   - component: {fileID: 5522085067880286368}
   - component: {fileID: 2536862618584765677}
+  - component: {fileID: 4053274278206921038}
   - component: {fileID: 657545871}
   m_Layer: 11
   m_Name: BeyazTabla (16)
@@ -3045,6 +3442,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &4053274278206921038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7989677900800170032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3145,6 +3559,7 @@ GameObject:
   - component: {fileID: 6858810462869217443}
   - component: {fileID: 2701559793091680348}
   - component: {fileID: 8245588122109633534}
+  - component: {fileID: 5482004480370335879}
   - component: {fileID: 657545864}
   m_Layer: 11
   m_Name: BeyazTabla (23)
@@ -3244,6 +3659,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &5482004480370335879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8674810729571600883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3371,6 +3803,7 @@ GameObject:
   - component: {fileID: 39465082823365087}
   - component: {fileID: 5884681731508142259}
   - component: {fileID: 3540661494692225859}
+  - component: {fileID: 7911465299928583359}
   - component: {fileID: 657545883}
   m_Layer: 11
   m_Name: BeyazTabla (4)
@@ -3470,6 +3903,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0
+--- !u!114 &7911465299928583359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9061741557740048322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fc073298615c748b25c30abcd6d30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  sprites: []
+  emptyCell: 
 --- !u!114 &657545883
 MonoBehaviour:
   m_ObjectHideFlags: 0

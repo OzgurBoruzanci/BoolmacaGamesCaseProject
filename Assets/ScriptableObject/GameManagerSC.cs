@@ -8,4 +8,7 @@ public class GameManagerSC : ScriptableObject
     public bool hardMod;
     public bool lightControl;
     public bool dominoSprite;
+    public bool music;
+    public bool sound;
+    public int score;
 }

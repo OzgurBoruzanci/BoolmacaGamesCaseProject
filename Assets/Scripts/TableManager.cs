@@ -6,10 +6,23 @@ using UnityEngine;
 public class TableManager : MonoBehaviour
 {
     List<GameObject> _tableCells;
+    List<GameObject> _destroyObjectList;
+    List<GameObject> _emptyTheCells;
     void Start()
     {
         _tableCells = new List<GameObject>();
+        _destroyObjectList = new List<GameObject>();
+        _emptyTheCells = new List<GameObject>();
         AddChildList();
+        EventManager.TableCells(_tableCells);
+    }
+    private void OnEnable()
+    {
+        EventManager.CheckCell += CheckCell;
+    }
+    private void OnDisable()
+    {
+        EventManager.CheckCell -= CheckCell;
     }
 
     void AddChildList()
@@ -28,8 +41,10 @@ public class TableManager : MonoBehaviour
     {
         CheckAndDestroyRowCell();
         CheckAndDestroyColumnCell();
+        DestroyList();
     }
     
+
     bool IsFullRow(int row)
     {
         for (int i = -6; i < 7f; i += 3)
@@ -82,7 +97,6 @@ public class TableManager : MonoBehaviour
             if (IsFullRow(i))
             {
                 willDestroyRowIndex.Add(i);
-                Debug.Log(i + " " + IsFullRow(i));
             }
         }
         foreach (var rowIndex in willDestroyRowIndex)
@@ -95,8 +109,8 @@ public class TableManager : MonoBehaviour
                     {
                         if (_tableCells[j].transform.localPosition.y == rowIndex)
                         {
-                            _tableCells[j].GetComponent<TableCellManager>().OnChildDominoBase.gameObject.SetActive(false);
-                            _tableCells[j].GetComponent<TableCellManager>().OnChildDominoBase = null;
+                            _destroyObjectList.Add(_tableCells[j].GetComponent<TableCellManager>().OnChildDominoBase.gameObject);
+                            _emptyTheCells.Add(_tableCells[j]);
                         }
                     }
                 }
@@ -124,12 +138,27 @@ public class TableManager : MonoBehaviour
                     {
                         if (_tableCells[j].transform.localPosition.y == i)
                         {
-                            Destroy(_tableCells[j].GetComponent<TableCellManager>().OnChildDominoBase.gameObject);
-                            _tableCells[j].GetComponent<TableCellManager>().OnChildDominoBase = null;
+                            _destroyObjectList.Add(_tableCells[j].GetComponent<TableCellManager>().OnChildDominoBase.gameObject);
+                            _emptyTheCells.Add(_tableCells[j]);
                         }
                     }
                 }
             }
         }
+    }
+
+    void DestroyList()
+    {
+        EventManager.EarnPoints(_destroyObjectList.Count);
+        for (int i = _destroyObjectList.Count-1; i >= 0; i--)
+        {
+            Destroy(_destroyObjectList[i]);
+        }
+        _destroyObjectList.Clear();
+        for (int i = 0; i < _emptyTheCells.Count; i++)
+        {
+            _emptyTheCells[i].GetComponent<TableCellManager>().OnChildDominoBase = null;
+        }
+        _emptyTheCells.Clear();
     }
 }
